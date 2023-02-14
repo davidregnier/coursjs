@@ -45,3 +45,10 @@ alert("ma variable n " + typeof (n) +
 "\nma variable u " + typeof (u) +
 "\nma variable nn " + typeof (nn) );
 ```
+La valeur **null** est un littéral JavaScript représentant la nullité au sens où aucune valeur pour l'objet n'est présente.
+
+**undefined** est une propriété de l'objet global, c'est-à-dire qu'elle est accessible globalement. La valeur initiale d'undefined est la valeur primitive undefined.
+
+La propriété globale **NaN** est une valeur utilisée pour représenter une quantité qui n'est pas un nombre (Not a Number en anglais).  
+
+typeof est un opérateur d'affectation
