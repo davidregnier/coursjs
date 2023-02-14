@@ -22,3 +22,10 @@ Concernant le nom de nos variables, nous avons une grande liberté dans le nomma
 Le nom d’une variable doit obligatoirement commencer par une lettre ou un underscore (_) et ne doit pas commencer par un chiffre ;
 Le nom d’une variable ne doit contenir que des lettres, des chiffres et des underscores mais pas de caractères spéciaux ;
 Le nom d’une variable ne doit pas contenir d’espace.
+
+### <u> exemple de variable </u>
+```var a = 42;
+var b = 4.2;
+var c = -42;
+var d = "42";
+alert("ma variable a " + typeof a +"\nma variable b " + typeof b +"\nma variable c " + typeof c + "\nma variable d " + typeof d);```
