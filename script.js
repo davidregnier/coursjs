@@ -24,4 +24,7 @@ var a = 42;
 var b = 4.2;
 var c = -42;
 var d = "42";
-alert("ma variable a " + typeof a +"\nma variable b " + typeof b +"\nma variable c " + typeof c + "\nma variable d " + typeof d);
+alert("ma variable a " + typeof (a) +
+"\nma variable b " + typeof (b) +
+"\nma variable c " + typeof (c) +
+ "\nma variable d " + typeof (d));

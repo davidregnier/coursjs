@@ -28,4 +28,9 @@ Le nom d’une variable ne doit pas contenir d’espace.
 var b = 4.2;
 var c = -42;
 var d = "42";
-alert("ma variable a " + typeof a +"\nma variable b " + typeof b +"\nma variable c " + typeof c + "\nma variable d " + typeof d);```
+alert("ma variable a " + typeof (a) +
+"\nma variable b " + typeof (b) +
+"\nma variable c " + typeof (c) +
+ "\nma variable d " + typeof (d));
+ ```
+<p align="center"> <img src="IMG\var typeof.png" alt="" /> </p> 
