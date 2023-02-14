@@ -52,3 +52,31 @@ La valeur **null** est un littéral JavaScript représentant la nullité au sens
 La propriété globale **NaN** est une valeur utilisée pour représenter une quantité qui n'est pas un nombre (Not a Number en anglais).  
 
 typeof est un opérateur d'affectation
+
+## differences entre *var* et *let*  
+
+Avec l’ancienne syntaxe var, on avait le droit de déclarer plusieurs fois une même variable en utilisant à chaque fois var (ce qui avait pour effet de modifier la valeur stockée).
+
+La nouvelle syntaxe avec let n’autorise pas cela. Pour modifier la valeur stockée dans une variable avec la nouvelle syntaxe, il suffit d’utiliser le nom de la variable et de lui affecter une autre valeur.
+
+Cette décision a été prise une nouvelle fois pour des raisons de clarté et de pertinence du code. En effet, il n’y a aucun intérêt à redéfinir une même variable plusieurs fois.
+
+La « portée » d’une variable désigne l’endroit où cette variable va pouvoir être utilisée dans un script. Il est un peu tôt pour vous expliquer ce concept puisque pour bien le comprendre il faut déjà savoir ce qu’est une fonction.
+
+Nous reparlerons donc de cette portée des variables lorsque nous aborderons les fonctions en JavaScript.
+
+Vous pouvez pour le moment retenir si vous le souhaitez que les variables déclarées avec var et celles avec let au sein d’une fonction ne vont pas av
+
+#€ Les opérateurs arithmétique
+```
+var x = 32;
+var y = 5;
+var z = 2;
+
+y += z 
+y *= z 
+y -= z 
+y /= z 
+y %= z 
+alert(y)
+```
