@@ -28,3 +28,11 @@ alert("ma variable a " + typeof (a) +
 "\nma variable b " + typeof (b) +
 "\nma variable c " + typeof (c) +
  "\nma variable d " + typeof (d));
+
+var n = null;
+var u = undefined;
+var nn = NaN;
+
+alert("ma variable n " + typeof (n) +
+"\nma variable u " + typeof (u) +
+"\nma variable nn " + typeof (nn) );

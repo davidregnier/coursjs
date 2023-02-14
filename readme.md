@@ -24,7 +24,8 @@ Le nom d’une variable ne doit contenir que des lettres, des chiffres et des un
 Le nom d’une variable ne doit pas contenir d’espace.
 
 ### <u> exemple de variable </u>
-```var a = 42;
+```
+var a = 42;
 var b = 4.2;
 var c = -42;
 var d = "42";
@@ -34,3 +35,13 @@ alert("ma variable a " + typeof (a) +
  "\nma variable d " + typeof (d));
  ```
 <p align="center"> <img src="IMG\var typeof.png" alt="" /> </p> 
+
+```
+var n = null;
+var u = undefined;
+var nn = NaN;
+
+alert("ma variable n " + typeof (n) +
+"\nma variable u " + typeof (u) +
+"\nma variable nn " + typeof (nn) );
+```
