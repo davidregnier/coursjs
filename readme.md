@@ -100,3 +100,24 @@ alert(y)
 |`||`|OU logique|Renvoie expr1 si elle peut être convertie en true et renvoie expr2 sinon. Lorsqu'il est utilisé avec des valeurs booléennes, `||` renvoie true si l'un des deux opérandes vaut true et false si les deux valent false.| expr1 `||` expr2|
 |!|NON logique|Renvoie false si son unique opérande peut être converti en true, renvoie true sinon.| !expr|
 
+```var arrayNbr = [1, 2, 3];
+var arrayStr = ["a", "b", "c"];
+ arrayNbr.push(4); //[1, 2, 3, 4] ajoute la valeur indiqué à la fin du tableau
+ arrayNbr.pop(); //[1, 2] retire la dernière valeur
+ arrayNbr.shift(); //[2, 3] retire la première valeur
+ arrayNbr.unshift(0); //[0, 1, 2, 3] ajoute la valeur indiqué au début du tableau
+ arrayStr.concat("d"); //fusionne des tableaux sans changer les valeurs du tableau initial
+ arrayStr.join('-'); // a-b-c joindre les valeurs du tableau sans changer les valeurs du tableau initial
+ arrayStr.slice(1); // ["b", "c"] retire le nombre d'éléments indiqué du tableau en partant du début sans changer les valeurs du tableau initial
+ arrayStr.slice(-1); // ["b", "c"] retire le nombre d'éléments indiqué du tableau en partant du début et en comptant depuis la fin sans changer les valeurs du tableau initial
+ arrayStr.includes("c"); //true vérifie si la valeur existe
+ arrayStr.indexOf("c"); //2 renvoi le position (index) de la valeur dans le tableau
+ arrayNbr.reduce((acc, cou)=> acc + cou ) //6 additionne tous les éléments du tableau
+Nouveau
+arrayNbr.find(el => el > 2) //3 renvoie la valeur du premier élément trouvé dans le tableau qui respecte la condition
+ arrayNbr.findIndex(el => el > 2) //2 renvoie l'index du premier élément trouvé dans le tableau qui respecte la condition
+arrayNbr.map(el => el * 2); //[2, 4, 6] crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+ arrayNbr.some(el => el > 2); //true passe le test implémenté par la fonction fournie. Elle renvoie un booléen indiquant le résultat du test.
+ arrayNbr.filter(el => el > 1) // [2,3] renvoi tous les éléments qui respectent la condition
+ arrayNbr.every(el => el > 1);//La méthode every() permet de tester si tous les éléments d'un tableau vérifient une condition donnée par une fonction en argument. Cette méthode renvoie un booléen pour le résultat du test.
+ arrayNbr.reverse();// La méthode reverse() transpose les éléments d'un tableau : le premier élément devient le dernier et le dernier devient le premier et ainsi de suite.```
