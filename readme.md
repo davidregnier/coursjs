@@ -80,3 +80,23 @@ y /= z
 y %= z 
 alert(y)
 ```
+|opérateur|Nom|But|Exemple|
+|:-------|:------|:-----:|:-----|
+|+|addition|ajoute deux nombres|6+9|
+|-|Soustraction|Soustrait le nombre de droite de celui de gauche.|20 - 15|
+|*|	Multiplication|	Multiplie deux nombres.|3 * 7|
+|/|Division|Divise le nombre de gauche par celui de droite.|10/5|
+|%|Reste (quelquefois nommé modulo)|Renvoie le reste de la division du nombre de gauche par celui de droite.|8 % 3 (renvoie 2, car 3 est contenu 2 fois dans 8, et il reste 2)|
+|**|Puissance (exponentiation)|Élève un nombre à la puissance fournie par le deuxième nombre. Autrement dit, le nombre à gauche est multiplié par lui-même autant de fois que le nombre de droit. Cet opérateur est apparu avec ECMAScript 2016.|5 ** 2 (renvoie 25, qui correspond à 5 * 5).|
+|==|egalité|Renvoie true si les opérandes sont égaux (après conversion implicite).|3 == var1 |
+|!=|inegalité|	Renvoie true si les opérandes sont différents (après conversion implicite).|var1 != 4|
+|===|égalité stricte|Renvoie true si les opérandes sont égaux et du même type. Voir également Object.is() et l'égalité en JavaScript.|3 === var1|
+|!==|inégalité stricte|Renvoie true si les opérandes sont du même type et différents ou s'ils ne sont pas du même type.|var1 !== "3"|
+|>|supériorité stricte|Renvoie true si l'opérande gauche est strictement supérieur à l'opérande droit.|var1 > var2||
+|>=|Superiorité|Renvoie true si l'opérande gauche est supérieur ou égal à l'opérande droit.|var2 >= var1|
+|<|Inferiorité stricte|Renvoie true si l'opérande gauche est strictement inférieur à l'opérande droit.|var1 < var2|
+|<=|inferiorité|	Renvoie true si l'opérande gauche est inférieur ou égal à l'opérande droit.| var2<= 5|
+|&&|ET logique|Renvoie expr1 si elle peut être convertie en false et renvoie expr2 sinon. Lorsqu'il est utilisé avec des valeurs booléennes, && renvoie true si les deux opérandes valent true et false sinon.|expr1 && expr2|
+|`||`|OU logique|Renvoie expr1 si elle peut être convertie en true et renvoie expr2 sinon. Lorsqu'il est utilisé avec des valeurs booléennes, `||` renvoie true si l'un des deux opérandes vaut true et false si les deux valent false.| expr1 `||` expr2|
+|!|NON logique|Renvoie false si son unique opérande peut être converti en true, renvoie true sinon.| !expr|
+

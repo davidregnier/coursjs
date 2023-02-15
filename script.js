@@ -36,13 +36,31 @@
 // alert("ma variable n " + typeof (n) +
 // "\nma variable u " + typeof (u) +
 // "\nma variable nn " + typeof (nn) );
-var x = 32;
-var y = 5;
-var z = 2;
+// var x = 32;
+// var y = 5;
+// var z = 2;
 
-y += z 
-y *= z 
-y -= z 
-y /= z 
-y %= z 
-alert(y)
+// y += z 
+// y *= z 
+// y -= z 
+// y /= z 
+// y %= z 
+// alert(y)
+var heuredouverture = 9;
+var heuredefermeture = 17;
+var heureactuelle = 18;
+
+if(heureactuelle <= heuredouverture){
+    alert("c'est trop tôt")
+}else if(heureactuelle >= heuredefermeture){
+    alert("c'est trop tard")
+}if(heureactuelle >= heuredouverture && heureactuelle <= heuredefermeture){
+    alert("bienvenue")
+    if(heureactuelle <= 12)
+    alert("nous somme le matin")
+    else
+    alert("nous somme l'aprés midi")
+}else{
+    alert("fermé")
+}
+// if(heureactuelle > heuredouverture )
