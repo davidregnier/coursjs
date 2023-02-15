@@ -113,7 +113,6 @@ var arrayStr = ["a", "b", "c"];
  arrayStr.includes("c"); //true vérifie si la valeur existe
  arrayStr.indexOf("c"); //2 renvoi le position (index) de la valeur dans le tableau
  arrayNbr.reduce((acc, cou)=> acc + cou ) //6 additionne tous les éléments du tableau
-Nouveau
 arrayNbr.find(el => el > 2) //3 renvoie la valeur du premier élément trouvé dans le tableau qui respecte la condition
  arrayNbr.findIndex(el => el > 2) //2 renvoie l'index du premier élément trouvé dans le tableau qui respecte la condition
 arrayNbr.map(el => el * 2); //[2, 4, 6] crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
