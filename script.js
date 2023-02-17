@@ -197,35 +197,55 @@
 
 
 
-        // let img = document.createElement()
-        // this.items = {
-        //     '0': 		{nom:'Pierre', url:'IMG/pierre.png'},
-        //     '1': 		{nom:'Feuille', url:'IMG/feuille.png'},
-        //     '2': 		{nom:'Ciseaux', url:'IMG/ciseaux.png'},
-        //   }
-
-        var img = document.querySelector("#ciseaux");
-        img.src = "IMG/ciseaux.png";
-        var img = document.querySelector("#pierre");
-        img.src = "IMG/pierre.png";
-        var img = document.querySelector("#feuille");
-        img.src = "IMG/feuille.png";
-
-        let test = document.getElementsByClassName("test")
-        console.log(test);
         
 
-        // for (let i = 0; i < test.length; i++) {
-        //     // console.log(test.target.getAttribute(click));
-            
-        // }
-        const testDivs = document.querySelectorAll('.test');
+        // var img = document.querySelector("#ciseaux");
+        // img.src = "IMG/ciseaux.png";
+        // var img = document.querySelector("#pierre");
+        // img.src = "IMG/pierre.png";
+        // var img = document.querySelector("#feuille");
+        // img.src = "IMG/feuille.png";
 
-        testDivs.forEach((div) => {
-            div.addEventListener('click', function(event) {
-              console.log(event.currentTarget.id);
-            });
-          });
+        // let test = document.getElementsByClassName("test")
+        // console.log(test);
+        
+        // const testDivs = document.querySelectorAll('.test');
+
+        // testDivs.forEach((div) => {
+        //     div.addEventListener('click', function(event) {
+        //       jouer(event.currentTarget.id);
+        //     });
+        //   });
+        document.getElementById("pierre").addEventListener("click", function() { jouer("pierre"); });
+        document.getElementById("feuille").addEventListener("click", function() { jouer("feuille"); });
+        document.getElementById("ciseaux").addEventListener("click", function() { jouer("ciseaux"); });
+
+        
+        function jouer(coupJoueur) {
+          let coupsPossibles = ["pierre", "feuille", "ciseaux"];
+          let coupOrdinateur = coupsPossibles[Math.floor(Math.random() * coupsPossibles.length)];
+          
+          var resultat;
+          if (coupJoueur === coupOrdinateur) {
+              resultat = "Égalité!";
+          } else if ((coupJoueur === "pierre" && coupOrdinateur === "ciseaux") ||
+                     (coupJoueur === "feuille" && coupOrdinateur === "pierre") ||
+                     (coupJoueur === "ciseaux" && coupOrdinateur === "feuille")) {
+              resultat = "Gagné!";
+          } else {
+              resultat = "Perdu!";
+          }
+      
+          document.getElementById("resultat").innerHTML = "Vous avez choisi "
+                                                            + coupJoueur 
+                                                            + ". L'ordinateur a choisi " 
+                                                            + coupOrdinateur 
+                                                            + ". " 
+                                                            + resultat;
+      }
+      
+
+
 
 
 

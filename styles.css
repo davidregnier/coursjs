@@ -4,59 +4,40 @@
     box-sizing: border-box;
 }
 #rond{
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
     margin: 5px;
     border-radius: 50%;
     background-color: brown;
 }
+h1{
+    font-size: 60px;
+    font-family: Bangers;
+    text-align: center;
+    margin: 100px;
+    text-decoration: underline;
+}
 .test,
 .carre{
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 0 rgb(101, 233, 101) ;
     margin: 5px;
-    background-color: rgb(175, 230, 26);
+    background-color: rgb(26, 27, 24);
 }
-button.PFC_btn { 
-    padding:0; 
-    cursor:pointer; 
-    border:5px solid lightgrey; 
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-button.PFC_btn:hover {
-     border-color:green;
-     }
-button.PFC_btn img { 
-    display:block;
-     width:160px;
-      height:120px;
-       border:0; 
-    }
-button.PFC_btn_replay {
-     padding:10px;
-      cursor:pointer;
-     }
-
-.equal {
-     color:blue;
-     }
-.win { 
-    color:green;
-     font-weight:bold;
-     }
-.lose { 
-    color:red;
- }
-
-#PFC_result h4 {
-     font-weight:normal;
-     }
-#PFC_result img {
-     width:100px;
-      border:2px solid lightgrey;
-     }
-#PFC_result img.win {
-     border:2px solid green; 
-    }
-#PFC_result img.lose { 
-    border:2px solid red;
- }
+img{
+height: 150px;
+width: 150px;
+}
+p{
+    margin-top: 100px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+}
